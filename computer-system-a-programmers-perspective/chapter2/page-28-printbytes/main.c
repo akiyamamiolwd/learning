@@ -8,13 +8,16 @@
  * @param argv is the pointer of the array of the args.
  * @command -h for help
  */
-int main(int argc, char* argv){
+int main(int argc, char* argv[]){
+	char helpCommand[] = "-h"; 
 	int i = 0;
-	while(argv[i]){
-		bool needHelp = strcmp("-h", argv[i]);
-		if(needHelp){
+	while(i < argc){
+		//there is no bool type in C.
+		int needHelp = strcmp(helpCommand, argv[i]);
+		if(needHelp == 0){
 				printf("This is a program for test show bytes of some type");
 		}
+		i++;
 	}
 	int x = 10;
 	int* y = &x;
