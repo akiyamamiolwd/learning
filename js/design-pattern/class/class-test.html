@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+	<script type="text/javascript" src="js-class-function-externally.js"></script>
+	<script type="text/javascript" src="js-class-function-internally.js"></script>
+	<script>
+		//use internal method class
+		var personIn = new PersonIn('In Person');
+		personIn.age = 12;
+		alert(personIn.getInfo());
+		
+		//use external method class
+		var personEx = new PersonIn('Ex Person');
+		alert(personEx.getInfo());
+		
+		
+	</script>
+	<body>
+	
+	</body>
+</html>

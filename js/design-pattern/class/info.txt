@@ -1,0 +1,4 @@
+try to use class in javascript.
+
+referance : http://www.phpied.com/3-ways-to-define-a-javascript-class/
+

@@ -1,0 +1,1 @@
+this is a study to learn how to use design pattern in js.
